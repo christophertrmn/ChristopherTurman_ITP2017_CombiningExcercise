@@ -7,6 +7,7 @@ namehp=10
 namestr=5
 namelevel=1
 monsterlist=["Uler Kadut","Arden Pejuang Bangsa","uler uleran","Sexy Boiz","Magnificient Fashion BOIZ", "Tante Vero"]
+monsterlvl=random.randint(1,6)
 monsterhp=7+monsterlvl
 monsterstr=7+monsterlvl
 b=random.choice(monsterlist)
