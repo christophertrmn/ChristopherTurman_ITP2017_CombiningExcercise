@@ -13,14 +13,15 @@ monsterstr=7+monsterlvl
 b=random.choice(monsterlist)
 c=monsterlvl
 def Mainmenu ():
-    global name
-    j = input("welcome "+ name +", do you want to fight or see your stats or quit?")
-    if (j == "stats"):
-        menustat()
-    if (j == "fight"):
-        battle()
-    if (j =="quit"):
-        quit()
+    while(True):
+        global name
+        j = input("welcome "+ name +", do you want to fight or see your stats or quit?")
+        if (j == "stats"):
+            menustat()
+        if (j == "fight"):
+            battle()
+        if (j =="quit"):
+            break
 
 def menustat ():
     print("Fighter:",name)
